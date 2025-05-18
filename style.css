@@ -1,0 +1,111 @@
+@import url("/home/sc/Fonts/WEB/css/satoshi.css");
+:root {
+  --capitalize: capitalize;
+  --uppercase: uppercase;
+  --clr-white: rgba(255, 255, 255, 0.397);
+  --hover-clr: white;
+}
+* ,
+*::before ,
+*::after ,
+html ,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* html , body */
+html ,
+body {
+    font-family: 'Satoshi-Regular','Times New Roman', Times, serif;
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+body {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.199);
+}
+.m-nav {
+  border-bottom: 2px solid rgba(126, 126, 126, 0.24);
+}
+/* flex */
+.flex {
+  display: flex;
+  padding: 0px 1rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+}
+.ctr-logo {
+  display: block;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 2px;
+  margin-right: auto;
+}
+.ctr-logo a.logo {
+  display: flex;
+  text-decoration: none;
+  padding: 4px;
+  width: 100px;
+}
+.ctr-logo .logo .text {
+  color: rgb(255, 255, 255);
+  text-transform: var(--uppercase);
+}
+/* inner menu */
+.ctr-inner-menu {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+
+}
+.ctr-inner-menu .inner-menu {
+  display: inline-flex;
+  list-style: none;
+  align-items: center;
+  gap: 4px;
+}
+.ctr-inner-menu li {
+  padding: 0px;
+}
+.ctr-inner-menu a.inner-link {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.322);
+  border-bottom-left-radius: 2px;
+  text-transform: var(--uppercase);
+  color: var(--clr-white);
+  transition: padding 150ms ease, scale 150ms ease,border-bottom 150ms ease,color 150ms ease 200ms;
+}
+.ctr-inner-menu a.inner-link:hover {
+  color: var(--hover-clr);
+}
+.ctr-inner-menu a.inner-link:hover {
+  border-bottom: 1px solid white;
+}
+/* inner cta */
+.ctr-inner-cta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: flex-end;
+}
+.ctr-inner-cta a {
+  padding: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  /* border: 1px solid red; */
+  color: var(--clr-white);
+}
+.ctr-inner-cta a:hover {
+  color: var(--hover-clr);
+}
